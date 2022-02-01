@@ -13,14 +13,11 @@ public class AuthenticationFilter implements ContainerRequestFilter {
 	@Override
 	public void filter(ContainerRequestContext requestContext) throws IOException {
 		// TODO Auto-generated method stub
-		if(requestContext.getUriInfo().getPath().equals("gettoken"))
-		{
-			return ;
-		}
-			String token=requestContext.getHeaderString("authorization");
-			
-		             jwTokenHelper.claimKey(token);   // 7
-//			
-			
-}
+		/*
+		 * if(requestContext.getUriInfo().getPath().equals("gettoken")) { return ; }
+		 * String token=requestContext.getHeaderString("authorization");
+		 * 
+		 * jwTokenHelper.claimKey(token); // 7 //
+		 * 
+		 */}
 }

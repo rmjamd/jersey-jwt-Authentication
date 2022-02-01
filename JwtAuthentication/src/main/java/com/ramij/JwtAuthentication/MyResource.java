@@ -14,9 +14,18 @@ public class MyResource {
 
     
 	@GET
+	@Path("/secure")
+	@Produces(MediaType.APPLICATION_JSON)
+	public String getsecureData()
+	{
+		return "hi Ramij";
+	}
+	@GET
+	@Path("/insecure")
 	@Produces(MediaType.APPLICATION_JSON)
 	public String getData()
 	{
 		return "hi Ramij";
 	}
+	
 }
